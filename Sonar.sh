@@ -1,3 +1,13 @@
+if [ ! -x "command -v gron" ];then 
+  echo "gron reqired"
+  exit 1
+fi
+
+if [ ! -x "command -v jq" ];then 
+  echo "jq reqired"
+  exit 1 
+fi
+
 sonar () { 
 url=$1
 
